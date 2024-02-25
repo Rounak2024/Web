@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Amazon-clone-Project
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazon.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsap.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border" style="margin-right: 10px;">
+                <p id="addr1">Deliver</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p style="margin-left: 3px;">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder=" Search Amazon" id="search-input" />
+                <div id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-sign border" style="margin-left: 10px; margin-right: 10px;">
+                <p><span style="font-size: 0.7rem;">Hello, Sign in</span></p>
+                <p class="nav-sign-2">Account & Lists</p>
+            </div>
+            <div class="nav-return border" style="margin-left: 10px; margin-right: 10px;">
+                <p><span style="font-size: 0.7rem;">Return</span></p>
+                <p class="nav-sign-2">&Orders</p>
+            </div>
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+            </div>
+        </div>
+
+        <!--panel-->
+
+        <div class="panel">
+            <div class="panel-all border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-opts ">
+                <p class="border">Today's Deals</p>
+                <p class="border">Customer Service</p>
+                <p class="border">Registry</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+            <div class="panel-deal border">
+                Shop deals on Amazon
+            </div>
+        </div>
+    </header>
+
+    <!--main body section-->
+    <div class="hero-section">
+        <div class="hero-massege">
+            You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+            <a href="wwww.amazon.in">Click here to go to amazon.in</a>
+        </div>
+    </div>
+
+    <!-- Shope section -->
+    <div class="shop-section">
+        
+        <!--1st shop section/ page 1-->
+        <div id="shop-section-1nd">
+            <div class="box border" id="home">
+                <h1 style="text-align: center;">Home</h1>
+                <div class="box-image">
+                    <img src="home.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border" id="beauty">
+                <h1 style="text-align: center;">Beauty picks</h1>
+                <div class="box-image">
+                    <img src="beauty.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border" id="Electronics">
+                <h1 style="text-align: center;">Electronics</h1>
+                <div class="box-image">
+                    <img src="electronics.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border">
+                <h1 style="text-align: center;">Toys</h1>
+                <div class="box-image">
+                    <img src="toy.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+        </div>
+
+        <!--2nd shop section/ page 2-->
+
+        <div id="shop-section-2nd">
+            <div class="box border">
+                <h1 style="text-align: center;">Shop Laptops & Tablets</h1>
+                <div class="box-image">
+                    <img src="laptop.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border">
+                <h1 style="text-align: center;">Air-purifying plants</h1>
+                <div class="box-image">
+                    <img src="plant.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border">
+                <h1 style="text-align: center;">Give Gift</h1>
+                <div class="box-image">
+                    <img src="gift.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="box border">
+                <h1 style="text-align: center;">Education supplies</h1>
+                <div class="box-image">
+                    <img src="edu.jpg" />
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot-panel">
+            Back to top<a href="#"><i class="fa-solid fa-caret-up"></i></a>
+        </div>
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+        </div>
+        <div class="foot-panel3">
+            <div id="image-end"></div>
+            Australia
+            Brazil
+            Canada
+            China
+            France
+            Germany
+            Italy
+            Japan
+            Mexico
+            Netherlands
+            Poland
+            Singapore
+            Spain
+            Turkey
+            United Arab Emirates
+            United Kingdom
+            United States
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsap.js"></script>
+
+</body>
+
+</html>
